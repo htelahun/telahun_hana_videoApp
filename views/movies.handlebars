@@ -1,0 +1,15 @@
+<a href="/">
+  HOME
+</a>
+<h1>{{title}}</h1>
+<ul>
+  {{#each movie}}
+  <li>
+    <h4>{{movie_title}}</h4>
+    <img src="images/{{movie_stars}}" alt="mini" />
+    <p>{{movie_desc}}</p>
+    <video src="movies/{{movie_video}}" poster="images/{{movie_thumb}}"></video>
+  </li>
+
+  {{/each}}
+</ul>

@@ -1,0 +1,54 @@
+body p {
+  color: white;
+  margin-top: 20px;
+  line-height: 40px;
+}
+
+body h1{
+  color: white;
+}
+
+.roku {
+padding-left: 50px;
+color: white;
+}
+
+.nav{
+  background-color: #252525;
+
+}
+
+ul{
+    margin-top: -50px;
+    margin-left: 1000px;
+}
+
+li {
+  list-style: none;
+  float: left;
+  padding-right: 50px;
+
+}
+
+ul li a:link{
+  text-decoration: none;
+  color: black;
+color: white;
+}
+
+a:visited{
+  color: lightgrey;
+}
+
+.vidHeader{
+  background-color: black;
+  height: 500px;
+margin-top: 50px;
+padding-top: 100px ;
+padding-left:50px;
+}
+
+.desc{
+  width: 500px;
+  text-align: justify;
+}

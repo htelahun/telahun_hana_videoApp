@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    {{#if index}}
+    <link rel="stylesheet" href="/stylesheets/main.css" media="screen" title="no title" charset="utf-8">
+    {{/if}}
+    <title>Video Application</title>
+  </head>
+  <body>
+    {{{body}}}
+
+    {{#if mainpage}}
+    <script src="javascripts/main.js">  </script>
+    {{/if}}
+
+    {{#if cms}}
+    <script src="/javascripts/cmsHandler.js"> </script>
+    {{/if}}
+  </body>
+</html>
