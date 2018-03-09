@@ -80,3 +80,15 @@ overflow-x: scroll;
 .thumbs{
 float: left;
 }
+body button {
+  background-color: none;
+}
+.getButton{
+  background-color: none;
+  border: none;
+  width: 50px;
+}
+.play{
+  background-color: none;
+  width: 50px;
+}
