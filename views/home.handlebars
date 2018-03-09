@@ -20,28 +20,26 @@
 
 </div>
 
-<div class="videos">
-  <h2>ACTION</h2>
-<img id="1" class="getButton" src="images/rendel.jpg" width="300" alt="">
-
-</div>
-
-<div class="videos">
-  <h2>COMEDY</h2>
 
 
-</div>
+<button id="1" class="deleteRecord">Delete a row</button>
+<button id="1" class="getButton">Run Ajax</button>
+<button id="2" class="getButton">Run Ajax</button>
+<button id="3" class="getButton">Run Ajax</button>
 
-<div class="videos">
-  <h2>HORROR</h2>
+      <ul  class="vidScroll">
+        {{#each thumb}}
+        <h2>{{genre_name}}</h2>
+        <li class="thumbs">
+        <a class="getButton" href="/api/{{movie_id}}"> <img class="videos" src="images/{{movie_thumb}}" alt="mini" /></a>
+        </li>
+
+        {{/each}}
+      </ul>
 
 
-</div>
 
-<div class="videos">
-  <h2>DRAMA</h2>
 
-</div>
 
 <footer class="nav">
   <h1 class="roku">Roku</h1>

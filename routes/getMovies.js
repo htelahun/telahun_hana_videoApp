@@ -4,7 +4,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  connect.query("SELECT * FROM tbl_movies", (err, result)=> {
+  connect.query(`SELECT * FROM tbl_movies WHERE movie_id = "${req.params.id}"`, (err, result)=> {
      if (err){
        throw err;
      }else {

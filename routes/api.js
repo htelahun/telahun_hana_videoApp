@@ -9,21 +9,27 @@ router.get('/', function(req, res, next) {
 
 
 router.get('/:id', function(req, res, next) {
-  connect.query(`SELECT * FROM tbl_movies WHERE movies_title = "${req.params.movies_id}"`, (err, result) =>{
+  connect.query(`SELECT * FROM tbl_movies WHERE movie_id = "${req.params.id}"`, (err, result) =>{
 
     if (err) {
       throw err;
 
     }else{
       console.log(result);
-      res.json(result);
+      //res.json(result);
+      res.render('movies',
+      { vidpage: true,
+        mainpage:true,
+        index : false,
+       movie : result
+     });
     }
   });
 });
 
-/*router.delete('/:id', (req, res)=>{
+router.delete('/:id', (req, res)=>{
   console.log('hit the delete route', req.params.id);
-  connect.query(`DELETE FROM mainmodel WHERE model="${req.params.id}"`, (err,result)=>{
+  connect.query(`DELETE FROM tbl_movies WHERE movie_id="${req.params.id}"`, (err,result)=>{
     if(err){
       throw err;
     }else{
@@ -33,17 +39,17 @@ router.get('/:id', function(req, res, next) {
   });
 });
 
-router.post('/', (req, res)=>{
-  console.log('hit the post route');
-
-  connect.query(`INSERT into mainmodel (id, model, modelName, pricing, modelDetails, imgPath) VALUES (NULL, "${req.body.model}", "${req.body.modelName}", "${req.body.pricing}", "${req.body.modelDetails}", "${req.body.imgPath}");`, (err, data)=>{
-    if (err){
-      throw (err);
-    }else{
-      res.json(data);
-    }
-  })
-
-});*/
+// router.post('/', (req, res)=>{
+//   console.log('hit the post route');
+//
+//   connect.query(`INSERT into mainmodel (id, model, modelName, pricing, modelDetails, imgPath) VALUES (NULL, "${req.body.model}", "${req.body.modelName}", "${req.body.pricing}", "${req.body.modelDetails}", "${req.body.imgPath}");`, (err, data)=>{
+//     if (err){
+//       throw (err);
+//     }else{
+//       res.json(data);
+//     }
+//   })
+//
+// });
 
 module.exports = router;

@@ -5,13 +5,16 @@
     {{#if index}}
     <link rel="stylesheet" href="/stylesheets/main.css" media="screen" title="no title" charset="utf-8">
     {{/if}}
+    {{#if vidpage}}
+    <link rel="stylesheet" href="/stylesheets/vid.css" media="screen" title="no title" charset="utf-8">
+    {{/if}}
     <title>Video Application</title>
   </head>
   <body>
     {{{body}}}
 
     {{#if mainpage}}
-    <script src="javascripts/main.js">  </script>
+    <script src="../javascripts/main.js">  </script>
     {{/if}}
 
     {{#if cms}}
