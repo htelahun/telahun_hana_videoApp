@@ -37,9 +37,10 @@ router.get('/:id', function(req, res, next) {
       console.log(result);
       //res.json(result);
       res.render('kidsPlayer',
-      {  mainpage: true,
+      {  mainpage: false,
        index : false,
        kids: true,
+        kidspage: true,
        vidpage: false,
        vidpage2: true,
        movie : result

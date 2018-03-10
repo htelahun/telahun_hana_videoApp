@@ -28,9 +28,9 @@ a {
   color: white;
   padding: 10px
 }
-video {
+.player {
 position: absolute;
 top: 0;
-opacity: .6;
+opacity: .4;
 
 }

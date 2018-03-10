@@ -1,6 +1,7 @@
 (() => {
 
-  let getButton = document.querySelectorAll('.getButton');
+  let getButton = document.querySelectorAll('.getButton'),
+      video = document.querySelector(".player");
 
   function getData (){
     //debugger;
@@ -19,8 +20,19 @@
     window.location.href= `/api/${this.id}`;
   }
 
+  function fadeup() {
+    //console.log('hit video');
+    video.style.opacity = "1";
+    if(video.paused) {
+      video.play();
+    }else{
+      video.pause();
+    }
 
+  }
 
 getButton.forEach(button => button.addEventListener('click',getData));
+
+video.addEventListener('click', fadeup, false);
 
 })();
