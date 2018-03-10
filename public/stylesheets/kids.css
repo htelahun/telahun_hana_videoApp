@@ -1,0 +1,115 @@
+body{
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+body p {
+  margin-top: 20px;
+  line-height: 40px;
+}
+
+body h1{
+  color: black;
+  padding-top: -100px;
+}
+
+.roku {
+padding-left: 50px;
+color: white;
+}
+
+.nav{
+  background-color:red;
+
+}
+
+ul{
+    margin-top: -50px;
+    margin-left: 1000px;
+}
+
+li {
+  list-style: none;
+  float: left;
+  padding-right: 50px;
+
+}
+
+ul li a:link{
+  text-decoration: none;
+
+}
+
+a:visited{
+  color: lightgrey;
+}
+
+.vidHeader{
+  background-image: url("../images/bossbaby.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: white;
+  height: 500px;
+margin-top: 50px;
+padding-top: 100px ;
+padding-left:50px;
+}
+
+.desc{
+  width: 450px;
+  text-align: justify;
+  font-size: 1.3em;
+color: black;
+}
+
+.getButtonHead {
+  background-color: transparent;
+  border: none;
+  width: 50px;
+  margin-left: 150px;
+}
+.videos {
+  width: 300px;
+  color: black;
+  padding-top: -20px;
+
+}
+
+
+
+.movWindow{
+overflow: hidden;
+margin-top: -600px;
+}
+
+.scroller ul {
+  display: inline;
+  width:1000px;
+  height: 300px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  margin-top: 1000px;
+}
+.scroller ul li {
+  height: 300px;
+display: inline;
+margin-bottom: 60px;
+}
+
+.btn{
+  background-color: transparent;
+  border: none;
+  width: 50px;
+  margin: 150px;
+}
+
+.btn:hover{
+  -moz-transform: scale(1.1);
+ -webkit-transform: scale(1.1);
+ transform: scale(1.1);
+}
+
+.play{
+  background-color: none;
+  width: 50px;
+
+}

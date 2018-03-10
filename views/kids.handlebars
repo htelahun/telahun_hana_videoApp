@@ -1,0 +1,61 @@
+<div class="nav">
+
+    <h1 class="roku">Roku</h1>
+    <ul>
+      <li>
+        <a href="/">User 1</a>
+      </li>
+
+    </ul>
+</div>
+
+<div class="vidHeader">
+
+  <h1>{{title}}</h1>
+  <p class="desc">{{desc}}</p>
+<button  type="button" id="2" class="getButtonHead getButton"><img class="play" src="images/play.png" alt=""></button>
+</div>
+
+
+
+<button type="button" id="1" class="btn getButton"><img class="play" src="images/play.png" alt=""></button>
+<button  type="button" id="4" class="btn getButton"><img class="play" src="images/play.png" alt=""></button>
+<button  type="button" id="3" class="btn getButton"><img class="play" src="images/play.png" alt=""></button>
+<button  type="button" id="2" class="btn getButton"><img class="play" src="images/play.png" alt=""></button>
+<button  type="button" id="8" class="btn getButton"><img class="play" src="images/play.png" alt=""></button>
+<button  type="button" id="7" class="btn getButton"><img class="play" src="images/play.png" alt=""></button>
+<button  type="button" id="6" class="btn getButton"><img class="play" src="images/play.png" alt=""></button>
+<button  type="button" id="5" class="btn getButton"><img class="play" src="images/play.png" alt=""></button>
+
+
+<div class="movWindow">
+    <div class="scroller">
+      <ul >
+        {{#each thumb}}
+
+        <li class="thumbs">
+        <a> <img class="videos" src="images/{{kids_thumb}}" alt="video thumbnail" /></a>
+        </li>
+
+        {{/each}}
+      </ul>
+
+    </div>
+</div>
+
+
+
+
+
+<footer class="nav">
+  <h1 class="roku">Roku</h1>
+  <ul>
+    <li>
+      <a href="/kids">Kids</a>
+    </li>
+
+    <li>
+      <a href="#">Logout</a>
+    </li>
+  </ul>
+</footer>

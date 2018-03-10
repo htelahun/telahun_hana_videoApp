@@ -1,0 +1,17 @@
+<a href="/kidsMovies">
+  HOME
+</a>
+<ul>
+  {{#each movie}}
+  <li>
+    <h4 class="fade">{{kids_title}}</h4>
+
+    <img class="fade" src="../images/{{kids_stars}}" alt="Thumbnail" />
+
+    <p class="fade">{{kids_desc}}</p>
+
+    <video controls src="../kids-movies/{{kids_video}}" poster="../images/{{kids_thumb}}"></video>
+  </li>
+
+  {{/each}}
+</ul>

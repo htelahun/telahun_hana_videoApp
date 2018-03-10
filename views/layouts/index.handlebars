@@ -8,6 +8,12 @@
     {{#if vidpage}}
     <link rel="stylesheet" href="/stylesheets/vid.css" media="screen" title="no title" charset="utf-8">
     {{/if}}
+    {{#if vidpage2}}
+    <link rel="stylesheet" href="/stylesheets/vid2.css" media="screen" title="no title" charset="utf-8">
+    {{/if}}
+    {{#if kids}}
+    <link rel="stylesheet" href="/stylesheets/kids.css" media="screen" title="no title" charset="utf-8">
+    {{/if}}
     <title>Video Application</title>
   </head>
   <body>
@@ -16,9 +22,8 @@
     {{#if mainpage}}
     <script src="../javascripts/main.js">  </script>
     {{/if}}
-
-    {{#if cms}}
-    <script src="/javascripts/cmsHandler.js"> </script>
+    {{#if kidspage}}
+    <script src="../javascripts/kids.js">  </script>
     {{/if}}
   </body>
 </html>

@@ -10,11 +10,10 @@ body p {
 
 body h1{
   color: white;
-  padding-left: 100px;
 }
 
 .roku {
-padding-left: 150px;
+padding-left: 50px;
 color: white;
 }
 
@@ -46,9 +45,9 @@ a:visited{
 }
 
 .vidHeader{
-  background-image: url("../images/12.jpg");
+  background-image: url("../images/rendel.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right;
   background-color: black;
   height: 500px;
 margin-top: 50px;
@@ -57,9 +56,8 @@ padding-left:50px;
 }
 
 .desc{
-  width: 500px;
+  width: 450px;
   text-align: justify;
-  padding-left: 100px;
   font-size: 1.3em;
 }
 
@@ -67,14 +65,13 @@ padding-left:50px;
   background-color: transparent;
   border: none;
   width: 50px;
-  margin-left: 900px;
-  margin-top: -300px;
+  margin-left: 150px;
 }
 .videos {
   width: 300px;
   color: black;
   padding-top: -20px;
-  
+
 }
 
 

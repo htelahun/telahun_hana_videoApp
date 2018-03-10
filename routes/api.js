@@ -21,35 +21,11 @@ router.get('/:id', function(req, res, next) {
       { vidpage: true,
         mainpage:true,
         index : false,
+         kids: false,
        movie : result
      });
     }
   });
 });
-
-router.delete('/:id', (req, res)=>{
-  console.log('hit the delete route', req.params.id);
-  connect.query(`DELETE FROM tbl_movies WHERE movie_id="${req.params.id}"`, (err,result)=>{
-    if(err){
-      throw err;
-    }else{
-      console.log(result);
-      res.json(result);
-    }
-  });
-});
-
-// router.post('/', (req, res)=>{
-//   console.log('hit the post route');
-//
-//   connect.query(`INSERT into mainmodel (id, model, modelName, pricing, modelDetails, imgPath) VALUES (NULL, "${req.body.model}", "${req.body.modelName}", "${req.body.pricing}", "${req.body.modelDetails}", "${req.body.imgPath}");`, (err, data)=>{
-//     if (err){
-//       throw (err);
-//     }else{
-//       res.json(data);
-//     }
-//   })
-//
-// });
 
 module.exports = router;
