@@ -5,10 +5,13 @@
 <ul>
   {{#each movie}}
   <li>
-    <h4>{{movie_title}}</h4>
-    <img src="../images/{{movie_stars}}" alt="mini" />
-    <p>{{movie_desc}}</p>
-    <video src="../movies/{{movie_video}}" poster="../images/{{movie_thumb}}"></video>
+    <h4 class="fade">{{movie_title}}</h4>
+
+    <img class="fade" src="../images/{{movie_stars}}" alt="Thumbnail" />
+
+    <p class="fade">{{movie_desc}}</p>
+
+    <video controls src="../movies/{{movie_video}}" poster="../images/{{movie_thumb}}"></video>
   </li>
 
   {{/each}}

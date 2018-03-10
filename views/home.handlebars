@@ -15,38 +15,42 @@
 <div class="vidHeader">
 
   <h1>{{title}}</h1>
-  <p>{{stars}}</p>
   <p class="desc">{{desc}}</p>
-
+<button  type="button" id="1" class="getButtonHead getButton"><img class="play" src="images/play.png" alt=""></button>
 </div>
 
 
 
-<button id="1" class="deleteRecord">Delete a row</button>
-<button id="1" class="getButton"><img class="play" src="images/play.png" alt=""></button>
-<button id="2" class="getButton"><img class="play" src="images/play.png" alt=""></button>
-<button id="3" class="getButton"><img class="play" src="images/play.png" alt=""></button>
-<button id="4" class="getButton"><img class="play" src="images/play.png" alt=""></button>
-<button id="5" class="getButton"><img class="play" src="images/play.png" alt=""></button>
-<button id="6" class="getButton"><img class="play" src="images/play.png" alt=""></button>
-<button id="7" class="getButton"><img class="play" src="images/play.png" alt=""></button>
-<button id="8" class="getButton"><img class="play" src="images/play.png" alt=""></button>
-<button id="9" class="getButton"><img class="play" src="images/play.png" alt=""></button>
-<button id="10" class="getButton"><img class="play" src="images/play.png" alt=""></button>
-<button id="11" class="getButton"><img class="play" src="images/play.png" alt=""></button>
-<button id="12" class="getButton"><img class="play" src="images/play.png" alt=""></button> 
+<!-- <button id="1" class="deleteRecord">Delete a row</button> -->
+<button type="button" id="1" class="btn getButton"><img class="play" src="images/play.png" alt=""></button>
+<button  type="button" id="4" class="btn getButton"><img class="play" src="images/play.png" alt=""></button>
+<button  type="button" id="3" class="btn getButton"><img class="play" src="images/play.png" alt=""></button>
+<button  type="button" id="2" class="btn getButton"><img class="play" src="images/play.png" alt=""></button>
+<button  type="button" id="8" class="btn getButton"><img class="play" src="images/play.png" alt=""></button>
+<button  type="button" id="7" class="btn getButton"><img class="play" src="images/play.png" alt=""></button>
+<button  type="button" id="6" class="btn getButton"><img class="play" src="images/play.png" alt=""></button>
+<button  type="button" id="5" class="btn getButton"><img class="play" src="images/play.png" alt=""></button>
+<button  type="button" id="11" class="btn getButton"><img class="play" src="images/play.png" alt=""></button>
+<button  type="button" id="10" class="btn getButton"><img class="play" src="images/play.png" alt=""></button>
+<button  type="button" id="9" class="btn getButton"><img class="play" src="images/play.png" alt=""></button>
+<button  type="button" id="12" class="btn getButton"><img class="play" src="images/play.png" alt=""></button>
 
-      <ul  class="vidScroll">
-
+<div class="movWindow">
+    <div class="scroller">
+      <ul >
         {{#each thumb}}
 
-        <h2>{{genre_name}}</h2>
         <li class="thumbs">
-        <a class="getButton" href="/api/{{movie_id}}"> <img class="videos" src="images/{{movie_thumb}}" alt="video thumbnail" /></a>
+          <h2>{{genre_name}}</h2>
+        <a> <img class="videos" src="images/{{movie_thumb}}" alt="video thumbnail" /></a>
         </li>
 
         {{/each}}
       </ul>
+
+    </div>
+</div>
+
 
 
 

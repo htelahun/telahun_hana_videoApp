@@ -3,21 +3,21 @@ var connect = require('../utils/sqlConnect');
 var router = express.Router();
 //
 
-router.get('/', function(req, res, next) {
-  connect.query("SELECT movie_id FROM tbl_movies ", (err, result)=> {
-     if (err){
-       throw err;
-     }else {
-       console.log(result);
-       res.render('home',
-       { title: 'Video',
-         mainpage: true,
-         index : true,
-        id : result
-      });
-     }
-   });
- });
+// router.get('/', function(req, res, next) {
+//   connect.query("SELECT movie_id FROM tbl_movies ", (err, result)=> {
+//      if (err){
+//        throw err;
+//      }else {
+//        console.log(result);
+//        res.render('home',
+//        { title: 'Video',
+//          mainpage: true,
+//          index : true,
+//         id : result
+//       });
+//      }
+//    });
+//  });
 
 // /* GET home page. */
 // router.get('/', function(req, res, next) {

@@ -35,6 +35,8 @@
     });
   }
 
+
+
 getButton.forEach(button => button.addEventListener('click',getData));
 deleteBtn.addEventListener('click', deleteaRecord);
 

@@ -10,7 +10,8 @@ router.get('/', function(req, res, next) {
      }else {
        console.log(result);
        res.render('home',
-       { title: 'Video',
+       { title: '12 Strong',
+       desc: "12 Strong tells the story of the first Special Forces team deployed to Afghanistan after 9/11; under the leadership of a new captain, the team must work with an Afghan warlord to take down for the Taliban.",
          mainpage: true,
          index : true,
         thumb : result

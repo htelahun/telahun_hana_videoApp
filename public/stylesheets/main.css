@@ -10,10 +10,11 @@ body p {
 
 body h1{
   color: white;
+  padding-left: 100px;
 }
 
 .roku {
-padding-left: 50px;
+padding-left: 150px;
 color: white;
 }
 
@@ -36,7 +37,7 @@ li {
 
 ul li a:link{
   text-decoration: none;
-  color: black;
+
 color: white;
 }
 
@@ -45,6 +46,9 @@ a:visited{
 }
 
 .vidHeader{
+  background-image: url("../images/12.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: black;
   height: 500px;
 margin-top: 50px;
@@ -55,40 +59,60 @@ padding-left:50px;
 .desc{
   width: 500px;
   text-align: justify;
+  padding-left: 100px;
+  font-size: 1.3em;
+}
+
+.getButtonHead {
+  background-color: transparent;
+  border: none;
+  width: 50px;
+  margin-left: 900px;
+  margin-top: -300px;
 }
 .videos {
   width: 300px;
   color: black;
   padding-top: -20px;
+  
 }
 
-.videos:hover{
+
+
+.movWindow{
+overflow: hidden;
+margin-top: -1050px;
+}
+
+.scroller ul {
+  display: inline;
+  width:1000px;
+  height: 300px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  margin-top: 1000px;
+}
+.scroller ul li {
+  height: 300px;
+display: inline;
+margin-bottom: 60px;
+}
+
+.btn{
+  background-color: transparent;
+  border: none;
+  width: 50px;
+  margin: 150px;
+}
+
+.btn:hover{
   -moz-transform: scale(1.1);
  -webkit-transform: scale(1.1);
  transform: scale(1.1);
 }
 
-.vidScroll{
-display: inline;
-width:1000px;
-height: 300px;
-overflow-y: hidden;
-overflow-x: scroll;
-
-}
-
-.thumbs{
-float: left;
-}
-body button {
-  background-color: none;
-}
-.getButton{
-  background-color: none;
-  border: none;
-  width: 50px;
-}
 .play{
   background-color: none;
   width: 50px;
+
 }
