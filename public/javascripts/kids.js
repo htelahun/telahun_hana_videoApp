@@ -22,11 +22,13 @@
 
   function fadeup() {
     //console.log('hit video');
-    video.style.opacity = "1";
+
     if(video.paused) {
       video.play();
+      video.style.opacity = "1";
     }else{
       video.pause();
+      video.style.opacity = ".2";
     }
 
   }

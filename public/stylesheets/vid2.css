@@ -27,17 +27,20 @@ img {
   top: 160px;
   left: 200px;
 }
-
+.home{
+  width: 30px;
+}
 a {
   position: absolute;
   float: right;
+  top: -120px;;
+  right: 260px;;
   color: white;
-  padding: 10px;
 }
 video {
 position: absolute;
 top: 0;
 left : 100px;
-opacity: .6;
+opacity: .2;
 
 }
