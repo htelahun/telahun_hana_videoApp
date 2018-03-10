@@ -19,7 +19,9 @@ router.get('/', function(req, res, next) {
        kidspage: true,
        mainpage:false,
        vidpage: false,
-       thumb : result
+       thumb : result,
+       title: "The Boss Baby",
+       desc : "A man named Tim Templeton tells a story about his 7-year-old self who lives with his parents, Ted and Janice. Ted and Janice work in a puppy factory called Puppy Co. founded by a man named Francis E. Francis. "
      });
     }
   });
